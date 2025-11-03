@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp
+"imu_attitude_estimation_stm32\startup_stm32f401xc.o"
+"imu_attitude_estimation_stm32\main.o"
+"imu_attitude_estimation_stm32\stm32f4xx_it.o"
+"imu_attitude_estimation_stm32\stm32f4xx_hal_msp.o"
+"imu_attitude_estimation_stm32\stm32f4xx_hal_spi.o"
+"imu_attitude_estimation_stm32\stm32f4xx_hal_rcc.o"
+"imu_attitude_estimation_stm32\stm32f4xx_hal_rcc_ex.o"
+"imu_attitude_estimation_stm32\stm32f4xx_hal_flash.o"
+"imu_attitude_estimation_stm32\stm32f4xx_hal_flash_ex.o"
+"imu_attitude_estimation_stm32\stm32f4xx_hal_flash_ramfunc.o"
+"imu_attitude_estimation_stm32\stm32f4xx_hal_gpio.o"
+"imu_attitude_estimation_stm32\stm32f4xx_hal_dma_ex.o"
+"imu_attitude_estimation_stm32\stm32f4xx_hal_dma.o"
+"imu_attitude_estimation_stm32\stm32f4xx_hal_pwr.o"
+"imu_attitude_estimation_stm32\stm32f4xx_hal_pwr_ex.o"
+"imu_attitude_estimation_stm32\stm32f4xx_hal_cortex.o"
+"imu_attitude_estimation_stm32\stm32f4xx_hal.o"
+"imu_attitude_estimation_stm32\stm32f4xx_hal_exti.o"
+"imu_attitude_estimation_stm32\stm32f4xx_hal_tim.o"
+"imu_attitude_estimation_stm32\stm32f4xx_hal_tim_ex.o"
+"imu_attitude_estimation_stm32\system_stm32f4xx.o"
+"imu_attitude_estimation_stm32\icm_20948.o"
+--strict --scatter "Imu_Attitude_Estimation_STM32\Imu_Attitude_Estimation_STM32.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Imu_Attitude_Estimation_STM32.map" -o Imu_Attitude_Estimation_STM32\Imu_Attitude_Estimation_STM32.axf
