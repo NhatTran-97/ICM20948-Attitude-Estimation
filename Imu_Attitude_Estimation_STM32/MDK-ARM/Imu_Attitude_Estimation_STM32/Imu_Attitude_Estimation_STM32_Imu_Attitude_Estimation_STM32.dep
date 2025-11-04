@@ -1,9 +1,9 @@
 Dependencies for Project 'Imu_Attitude_Estimation_STM32', Target 'Imu_Attitude_Estimation_STM32': (DO NOT MODIFY !)
-F (startup_stm32f401xc.s)(0x69071847)(--cpu Cortex-M4.fp -g --apcs=interwork -I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 528" --pd "_RTE_ SETA 1" --pd "STM32F401xC SETA 1"--list startup_stm32f401xc.lst --xref -o imu_attitude_estimation_stm32\startup_stm32f401xc.o --depend imu_attitude_estimation_stm32\startup_stm32f401xc.d)
-F (../Core/Src/main.c)(0x690808BB)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC-o imu_attitude_estimation_stm32\main.o --omf_browse imu_attitude_estimation_stm32\main.crf --depend imu_attitude_estimation_stm32\main.d)
-I (../Core/Inc/main.h)(0x6906E4A5)
+F (startup_stm32f401xc.s)(0x6909C7DC)(--cpu Cortex-M4.fp -g --apcs=interwork -I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 528" --pd "_RTE_ SETA 1" --pd "STM32F401xC SETA 1"--list startup_stm32f401xc.lst --xref -o imu_attitude_estimation_stm32\startup_stm32f401xc.o --depend imu_attitude_estimation_stm32\startup_stm32f401xc.d)
+F (../Core/Src/main.c)(0x6909E649)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs -I ../Middlewares/ST/ARM/DSP/Inc-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC -DARM_MATH_CM4-o imu_attitude_estimation_stm32\main.o --omf_browse imu_attitude_estimation_stm32\main.crf --depend imu_attitude_estimation_stm32\main.d)
+I (../Core/Inc/main.h)(0x690815E5)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x68B61CCE)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6906E4A5)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6909C6BB)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x68B61CCE)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x68B61CCF)
@@ -30,12 +30,22 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x68B61CCE
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x68B61CCE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB87F2)
-I (../Libs/icm_20948.h)(0x6906FEC5)
-F (../Core/Src/stm32f4xx_it.c)(0x69071846)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC-o imu_attitude_estimation_stm32\stm32f4xx_it.o --omf_browse imu_attitude_estimation_stm32\stm32f4xx_it.crf --depend imu_attitude_estimation_stm32\stm32f4xx_it.d)
-I (../Core/Inc/main.h)(0x6906E4A5)
+I (../Libs/icm_20948.h)(0x69080202)
+I (../Middlewares/ST/ARM/DSP/Inc/arm_math.h)(0x69080D84)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB87F2)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5CEB87E6)
+I (C:\Keil_v5\ARM\ARMCC\include\float.h)(0x5CEB87F2)
+I (C:\Keil_v5\ARM\ARMCC\include\limits.h)(0x5CEB87E6)
+I (../Libs/imu_data.h)(0x6909CB16)
+I (../Libs/euler_angles.h)(0x6909BFEB)
+F (../Core/Src/stm32f4xx_it.c)(0x690815E5)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs -I ../Middlewares/ST/ARM/DSP/Inc-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC -DARM_MATH_CM4-o imu_attitude_estimation_stm32\stm32f4xx_it.o --omf_browse imu_attitude_estimation_stm32\stm32f4xx_it.crf --depend imu_attitude_estimation_stm32\stm32f4xx_it.d)
+I (../Core/Inc/main.h)(0x690815E5)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x68B61CCE)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6906E4A5)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6909C6BB)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x68B61CCE)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x68B61CCF)
@@ -62,11 +72,14 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x68B61CCE
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x68B61CCE)
-I (../Core/Inc/stm32f4xx_it.h)(0x69071846)
-F (../Core/Src/stm32f4xx_hal_msp.c)(0x69071846)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC-o imu_attitude_estimation_stm32\stm32f4xx_hal_msp.o --omf_browse imu_attitude_estimation_stm32\stm32f4xx_hal_msp.crf --depend imu_attitude_estimation_stm32\stm32f4xx_hal_msp.d)
-I (../Core/Inc/main.h)(0x6906E4A5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x68B61CCE)
+I (../Core/Inc/stm32f4xx_it.h)(0x690815E5)
+F (../Core/Src/stm32f4xx_hal_msp.c)(0x6909C6BB)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs -I ../Middlewares/ST/ARM/DSP/Inc-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC -DARM_MATH_CM4-o imu_attitude_estimation_stm32\stm32f4xx_hal_msp.o --omf_browse imu_attitude_estimation_stm32\stm32f4xx_hal_msp.crf --depend imu_attitude_estimation_stm32\stm32f4xx_hal_msp.d)
+I (../Core/Inc/main.h)(0x690815E5)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x68B61CCE)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6906E4A5)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6909C6BB)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x68B61CCE)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x68B61CCF)
@@ -93,9 +106,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x68B61CCE
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x68B61CCE)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c)(0x68B61CCE)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC-o imu_attitude_estimation_stm32\stm32f4xx_hal_spi.o --omf_browse imu_attitude_estimation_stm32\stm32f4xx_hal_spi.crf --depend imu_attitude_estimation_stm32\stm32f4xx_hal_spi.d)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x68B61CCE)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c)(0x68B61CCE)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs -I ../Middlewares/ST/ARM/DSP/Inc-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC -DARM_MATH_CM4-o imu_attitude_estimation_stm32\stm32f4xx_hal_spi.o --omf_browse imu_attitude_estimation_stm32\stm32f4xx_hal_spi.crf --depend imu_attitude_estimation_stm32\stm32f4xx_hal_spi.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x68B61CCE)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6906E4A5)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6909C6BB)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x68B61CCE)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x68B61CCF)
@@ -122,9 +138,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x68B61CCE
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x68B61CCE)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c)(0x68B61CCE)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC-o imu_attitude_estimation_stm32\stm32f4xx_hal_rcc.o --omf_browse imu_attitude_estimation_stm32\stm32f4xx_hal_rcc.crf --depend imu_attitude_estimation_stm32\stm32f4xx_hal_rcc.d)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x68B61CCE)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c)(0x68B61CCE)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs -I ../Middlewares/ST/ARM/DSP/Inc-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC -DARM_MATH_CM4-o imu_attitude_estimation_stm32\stm32f4xx_hal_rcc.o --omf_browse imu_attitude_estimation_stm32\stm32f4xx_hal_rcc.crf --depend imu_attitude_estimation_stm32\stm32f4xx_hal_rcc.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x68B61CCE)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6906E4A5)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6909C6BB)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x68B61CCE)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x68B61CCF)
@@ -151,9 +170,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x68B61CCE
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x68B61CCE)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c)(0x68B61CCE)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC-o imu_attitude_estimation_stm32\stm32f4xx_hal_rcc_ex.o --omf_browse imu_attitude_estimation_stm32\stm32f4xx_hal_rcc_ex.crf --depend imu_attitude_estimation_stm32\stm32f4xx_hal_rcc_ex.d)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x68B61CCE)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c)(0x68B61CCE)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs -I ../Middlewares/ST/ARM/DSP/Inc-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC -DARM_MATH_CM4-o imu_attitude_estimation_stm32\stm32f4xx_hal_rcc_ex.o --omf_browse imu_attitude_estimation_stm32\stm32f4xx_hal_rcc_ex.crf --depend imu_attitude_estimation_stm32\stm32f4xx_hal_rcc_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x68B61CCE)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6906E4A5)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6909C6BB)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x68B61CCE)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x68B61CCF)
@@ -180,9 +202,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x68B61CCE
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x68B61CCE)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c)(0x68B61CCE)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC-o imu_attitude_estimation_stm32\stm32f4xx_hal_flash.o --omf_browse imu_attitude_estimation_stm32\stm32f4xx_hal_flash.crf --depend imu_attitude_estimation_stm32\stm32f4xx_hal_flash.d)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x68B61CCE)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c)(0x68B61CCE)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs -I ../Middlewares/ST/ARM/DSP/Inc-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC -DARM_MATH_CM4-o imu_attitude_estimation_stm32\stm32f4xx_hal_flash.o --omf_browse imu_attitude_estimation_stm32\stm32f4xx_hal_flash.crf --depend imu_attitude_estimation_stm32\stm32f4xx_hal_flash.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x68B61CCE)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6906E4A5)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6909C6BB)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x68B61CCE)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x68B61CCF)
@@ -209,9 +234,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x68B61CCE
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x68B61CCE)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c)(0x68B61CCE)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC-o imu_attitude_estimation_stm32\stm32f4xx_hal_flash_ex.o --omf_browse imu_attitude_estimation_stm32\stm32f4xx_hal_flash_ex.crf --depend imu_attitude_estimation_stm32\stm32f4xx_hal_flash_ex.d)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x68B61CCE)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c)(0x68B61CCE)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs -I ../Middlewares/ST/ARM/DSP/Inc-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC -DARM_MATH_CM4-o imu_attitude_estimation_stm32\stm32f4xx_hal_flash_ex.o --omf_browse imu_attitude_estimation_stm32\stm32f4xx_hal_flash_ex.crf --depend imu_attitude_estimation_stm32\stm32f4xx_hal_flash_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x68B61CCE)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6906E4A5)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6909C6BB)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x68B61CCE)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x68B61CCF)
@@ -238,9 +266,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x68B61CCE
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x68B61CCE)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c)(0x68B61CCE)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC-o imu_attitude_estimation_stm32\stm32f4xx_hal_flash_ramfunc.o --omf_browse imu_attitude_estimation_stm32\stm32f4xx_hal_flash_ramfunc.crf --depend imu_attitude_estimation_stm32\stm32f4xx_hal_flash_ramfunc.d)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x68B61CCE)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c)(0x68B61CCE)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs -I ../Middlewares/ST/ARM/DSP/Inc-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC -DARM_MATH_CM4-o imu_attitude_estimation_stm32\stm32f4xx_hal_flash_ramfunc.o --omf_browse imu_attitude_estimation_stm32\stm32f4xx_hal_flash_ramfunc.crf --depend imu_attitude_estimation_stm32\stm32f4xx_hal_flash_ramfunc.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x68B61CCE)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6906E4A5)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6909C6BB)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x68B61CCE)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x68B61CCF)
@@ -267,9 +298,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x68B61CCE
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x68B61CCE)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c)(0x68B61CCE)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC-o imu_attitude_estimation_stm32\stm32f4xx_hal_gpio.o --omf_browse imu_attitude_estimation_stm32\stm32f4xx_hal_gpio.crf --depend imu_attitude_estimation_stm32\stm32f4xx_hal_gpio.d)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x68B61CCE)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c)(0x68B61CCE)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs -I ../Middlewares/ST/ARM/DSP/Inc-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC -DARM_MATH_CM4-o imu_attitude_estimation_stm32\stm32f4xx_hal_gpio.o --omf_browse imu_attitude_estimation_stm32\stm32f4xx_hal_gpio.crf --depend imu_attitude_estimation_stm32\stm32f4xx_hal_gpio.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x68B61CCE)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6906E4A5)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6909C6BB)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x68B61CCE)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x68B61CCF)
@@ -296,9 +330,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x68B61CCE
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x68B61CCE)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c)(0x68B61CCE)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC-o imu_attitude_estimation_stm32\stm32f4xx_hal_dma_ex.o --omf_browse imu_attitude_estimation_stm32\stm32f4xx_hal_dma_ex.crf --depend imu_attitude_estimation_stm32\stm32f4xx_hal_dma_ex.d)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x68B61CCE)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c)(0x68B61CCE)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs -I ../Middlewares/ST/ARM/DSP/Inc-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC -DARM_MATH_CM4-o imu_attitude_estimation_stm32\stm32f4xx_hal_dma_ex.o --omf_browse imu_attitude_estimation_stm32\stm32f4xx_hal_dma_ex.crf --depend imu_attitude_estimation_stm32\stm32f4xx_hal_dma_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x68B61CCE)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6906E4A5)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6909C6BB)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x68B61CCE)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x68B61CCF)
@@ -325,9 +362,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x68B61CCE
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x68B61CCE)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c)(0x68B61CCE)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC-o imu_attitude_estimation_stm32\stm32f4xx_hal_dma.o --omf_browse imu_attitude_estimation_stm32\stm32f4xx_hal_dma.crf --depend imu_attitude_estimation_stm32\stm32f4xx_hal_dma.d)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x68B61CCE)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c)(0x68B61CCE)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs -I ../Middlewares/ST/ARM/DSP/Inc-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC -DARM_MATH_CM4-o imu_attitude_estimation_stm32\stm32f4xx_hal_dma.o --omf_browse imu_attitude_estimation_stm32\stm32f4xx_hal_dma.crf --depend imu_attitude_estimation_stm32\stm32f4xx_hal_dma.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x68B61CCE)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6906E4A5)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6909C6BB)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x68B61CCE)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x68B61CCF)
@@ -354,9 +394,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x68B61CCE
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x68B61CCE)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c)(0x68B61CCE)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC-o imu_attitude_estimation_stm32\stm32f4xx_hal_pwr.o --omf_browse imu_attitude_estimation_stm32\stm32f4xx_hal_pwr.crf --depend imu_attitude_estimation_stm32\stm32f4xx_hal_pwr.d)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x68B61CCE)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c)(0x68B61CCE)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs -I ../Middlewares/ST/ARM/DSP/Inc-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC -DARM_MATH_CM4-o imu_attitude_estimation_stm32\stm32f4xx_hal_pwr.o --omf_browse imu_attitude_estimation_stm32\stm32f4xx_hal_pwr.crf --depend imu_attitude_estimation_stm32\stm32f4xx_hal_pwr.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x68B61CCE)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6906E4A5)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6909C6BB)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x68B61CCE)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x68B61CCF)
@@ -383,9 +426,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x68B61CCE
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x68B61CCE)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c)(0x68B61CCE)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC-o imu_attitude_estimation_stm32\stm32f4xx_hal_pwr_ex.o --omf_browse imu_attitude_estimation_stm32\stm32f4xx_hal_pwr_ex.crf --depend imu_attitude_estimation_stm32\stm32f4xx_hal_pwr_ex.d)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x68B61CCE)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c)(0x68B61CCE)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs -I ../Middlewares/ST/ARM/DSP/Inc-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC -DARM_MATH_CM4-o imu_attitude_estimation_stm32\stm32f4xx_hal_pwr_ex.o --omf_browse imu_attitude_estimation_stm32\stm32f4xx_hal_pwr_ex.crf --depend imu_attitude_estimation_stm32\stm32f4xx_hal_pwr_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x68B61CCE)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6906E4A5)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6909C6BB)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x68B61CCE)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x68B61CCF)
@@ -412,9 +458,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x68B61CCE
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x68B61CCE)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c)(0x68B61CCE)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC-o imu_attitude_estimation_stm32\stm32f4xx_hal_cortex.o --omf_browse imu_attitude_estimation_stm32\stm32f4xx_hal_cortex.crf --depend imu_attitude_estimation_stm32\stm32f4xx_hal_cortex.d)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x68B61CCE)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c)(0x68B61CCE)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs -I ../Middlewares/ST/ARM/DSP/Inc-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC -DARM_MATH_CM4-o imu_attitude_estimation_stm32\stm32f4xx_hal_cortex.o --omf_browse imu_attitude_estimation_stm32\stm32f4xx_hal_cortex.crf --depend imu_attitude_estimation_stm32\stm32f4xx_hal_cortex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x68B61CCE)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6906E4A5)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6909C6BB)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x68B61CCE)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x68B61CCF)
@@ -441,9 +490,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x68B61CCE
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x68B61CCE)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c)(0x68B61CCE)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC-o imu_attitude_estimation_stm32\stm32f4xx_hal.o --omf_browse imu_attitude_estimation_stm32\stm32f4xx_hal.crf --depend imu_attitude_estimation_stm32\stm32f4xx_hal.d)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x68B61CCE)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c)(0x68B61CCE)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs -I ../Middlewares/ST/ARM/DSP/Inc-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC -DARM_MATH_CM4-o imu_attitude_estimation_stm32\stm32f4xx_hal.o --omf_browse imu_attitude_estimation_stm32\stm32f4xx_hal.crf --depend imu_attitude_estimation_stm32\stm32f4xx_hal.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x68B61CCE)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6906E4A5)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6909C6BB)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x68B61CCE)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x68B61CCF)
@@ -470,9 +522,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x68B61CCE
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x68B61CCE)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c)(0x68B61CCE)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC-o imu_attitude_estimation_stm32\stm32f4xx_hal_exti.o --omf_browse imu_attitude_estimation_stm32\stm32f4xx_hal_exti.crf --depend imu_attitude_estimation_stm32\stm32f4xx_hal_exti.d)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x68B61CCE)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c)(0x68B61CCE)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs -I ../Middlewares/ST/ARM/DSP/Inc-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC -DARM_MATH_CM4-o imu_attitude_estimation_stm32\stm32f4xx_hal_exti.o --omf_browse imu_attitude_estimation_stm32\stm32f4xx_hal_exti.crf --depend imu_attitude_estimation_stm32\stm32f4xx_hal_exti.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x68B61CCE)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6906E4A5)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6909C6BB)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x68B61CCE)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x68B61CCF)
@@ -499,9 +554,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x68B61CCE
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x68B61CCE)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c)(0x68B61CCE)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC-o imu_attitude_estimation_stm32\stm32f4xx_hal_tim.o --omf_browse imu_attitude_estimation_stm32\stm32f4xx_hal_tim.crf --depend imu_attitude_estimation_stm32\stm32f4xx_hal_tim.d)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x68B61CCE)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c)(0x68B61CCE)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs -I ../Middlewares/ST/ARM/DSP/Inc-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC -DARM_MATH_CM4-o imu_attitude_estimation_stm32\stm32f4xx_hal_tim.o --omf_browse imu_attitude_estimation_stm32\stm32f4xx_hal_tim.crf --depend imu_attitude_estimation_stm32\stm32f4xx_hal_tim.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x68B61CCE)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6906E4A5)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6909C6BB)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x68B61CCE)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x68B61CCF)
@@ -528,9 +586,12 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x68B61CCE
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x68B61CCE)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c)(0x68B61CCE)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC-o imu_attitude_estimation_stm32\stm32f4xx_hal_tim_ex.o --omf_browse imu_attitude_estimation_stm32\stm32f4xx_hal_tim_ex.crf --depend imu_attitude_estimation_stm32\stm32f4xx_hal_tim_ex.d)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x68B61CCE)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c)(0x68B61CCE)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs -I ../Middlewares/ST/ARM/DSP/Inc-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC -DARM_MATH_CM4-o imu_attitude_estimation_stm32\stm32f4xx_hal_tim_ex.o --omf_browse imu_attitude_estimation_stm32\stm32f4xx_hal_tim_ex.crf --depend imu_attitude_estimation_stm32\stm32f4xx_hal_tim_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x68B61CCE)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6906E4A5)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6909C6BB)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x68B61CCE)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x68B61CCF)
@@ -557,46 +618,18 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x68B61CCE
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x68B61CCE)
-F (../Core/Src/system_stm32f4xx.c)(0x68B61CCF)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC-o imu_attitude_estimation_stm32\system_stm32f4xx.o --omf_browse imu_attitude_estimation_stm32\system_stm32f4xx.crf --depend imu_attitude_estimation_stm32\system_stm32f4xx.d)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x68B61CCF)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h)(0x68B61CCF)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x68B61CCF)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB87F2)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x68B61CCF)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x68B61CCF)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x68B61CCF)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x68B61CCF)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x68B61CCF)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x68B61CCE)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c)(0x68B61CCE)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs -I ../Middlewares/ST/ARM/DSP/Inc-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC -DARM_MATH_CM4-o imu_attitude_estimation_stm32\stm32f4xx_hal_uart.o --omf_browse imu_attitude_estimation_stm32\stm32f4xx_hal_uart.crf --depend imu_attitude_estimation_stm32\stm32f4xx_hal_uart.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x68B61CCE)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6906E4A5)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x68B61CCE)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x68B61CCE)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x68B61CCE)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB87F2)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x68B61CCE)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x68B61CCE)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x68B61CCE)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x68B61CCE)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x68B61CCE)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x68B61CCE)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x68B61CCE)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x68B61CCE)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x68B61CCE)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x68B61CCE)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x68B61CCE)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x68B61CCE)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x68B61CCE)
-F (..\Libs\icm_20948.c)(0x69080A26)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC-o imu_attitude_estimation_stm32\icm_20948.o --omf_browse imu_attitude_estimation_stm32\icm_20948.crf --depend imu_attitude_estimation_stm32\icm_20948.d)
-I (..\Libs\icm_20948.h)(0x6906FEC5)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB87F2)
-I (../Core/Inc/main.h)(0x6906E4A5)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x68B61CCE)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6906E4A5)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6909C6BB)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x68B61CCE)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x68B61CCF)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h)(0x68B61CCF)
 I (../Drivers/CMSIS/Include/core_cm4.h)(0x68B61CCF)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB87F2)
 I (../Drivers/CMSIS/Include/cmsis_version.h)(0x68B61CCF)
 I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x68B61CCF)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x68B61CCF)
@@ -617,5 +650,160 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x68B61CCE
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x68B61CCE)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x68B61CCE)
+F (../Core/Src/system_stm32f4xx.c)(0x690815E5)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs -I ../Middlewares/ST/ARM/DSP/Inc-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC -DARM_MATH_CM4-o imu_attitude_estimation_stm32\system_stm32f4xx.o --omf_browse imu_attitude_estimation_stm32\system_stm32f4xx.crf --depend imu_attitude_estimation_stm32\system_stm32f4xx.d)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x68B61CCF)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h)(0x68B61CCF)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x68B61CCF)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB87F2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x68B61CCF)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x68B61CCF)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x68B61CCF)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x68B61CCF)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x68B61CCF)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x68B61CCE)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6909C6BB)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x68B61CCE)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB87F2)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x68B61CCE)
+F (..\Libs\icm_20948.c)(0x6907F714)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs -I ../Middlewares/ST/ARM/DSP/Inc-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC -DARM_MATH_CM4-o imu_attitude_estimation_stm32\icm_20948.o --omf_browse imu_attitude_estimation_stm32\icm_20948.crf --depend imu_attitude_estimation_stm32\icm_20948.d)
+I (..\Libs\icm_20948.h)(0x69080202)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB87F2)
+I (../Core/Inc/main.h)(0x690815E5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x68B61CCE)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6909C6BB)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x68B61CCE)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x68B61CCF)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h)(0x68B61CCF)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x68B61CCF)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x68B61CCF)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x68B61CCF)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x68B61CCF)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x68B61CCF)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x68B61CCF)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x68B61CCE)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB87F2)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x68B61CCE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB87F2)
-F (..\Libs\icm_20948.h)(0x6906FEC5)()
+F (..\Libs\icm_20948.h)(0x69080202)()
+F (..\Libs\imu_data.c)(0x6909BFEB)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs -I ../Middlewares/ST/ARM/DSP/Inc-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC -DARM_MATH_CM4-o imu_attitude_estimation_stm32\imu_data.o --omf_browse imu_attitude_estimation_stm32\imu_data.crf --depend imu_attitude_estimation_stm32\imu_data.d)
+I (..\Libs\imu_data.h)(0x6909CB16)
+I (../Core/Inc/main.h)(0x690815E5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x68B61CCE)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6909C6BB)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x68B61CCE)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x68B61CCF)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h)(0x68B61CCF)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x68B61CCF)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB87F2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x68B61CCF)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x68B61CCF)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x68B61CCF)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x68B61CCF)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x68B61CCF)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x68B61CCE)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB87F2)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x68B61CCE)
+I (..\Libs\icm_20948.h)(0x69080202)
+I (../Middlewares/ST/ARM/DSP/Inc/arm_math.h)(0x69080D84)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB87F2)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5CEB87E6)
+I (C:\Keil_v5\ARM\ARMCC\include\float.h)(0x5CEB87F2)
+I (C:\Keil_v5\ARM\ARMCC\include\limits.h)(0x5CEB87E6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB87F2)
+F (..\Libs\imu_data.h)(0x6909CB16)()
+F (..\Libs\euler_angles.c)(0x6909BF6A)(--c99 -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../Libs -I ../Middlewares/ST/ARM/DSP/Inc-I.\RTE\_Imu_Attitude_Estimation_STM32-IC:\Users\dnnev\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\dnnev\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="528" -D_RTE_ -DSTM32F401xC -DUSE_HAL_DRIVER -DSTM32F401xC -DARM_MATH_CM4-o imu_attitude_estimation_stm32\euler_angles.o --omf_browse imu_attitude_estimation_stm32\euler_angles.crf --depend imu_attitude_estimation_stm32\euler_angles.d)
+I (..\Libs\euler_angles.h)(0x6909BFEB)
+I (..\Libs\imu_data.h)(0x6909CB16)
+I (../Core/Inc/main.h)(0x690815E5)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x68B61CCE)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6909C6BB)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x68B61CCE)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x68B61CCF)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h)(0x68B61CCF)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x68B61CCF)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB87F2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x68B61CCF)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x68B61CCF)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x68B61CCF)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x68B61CCF)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x68B61CCF)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x68B61CCE)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB87F2)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x68B61CCE)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x68B61CCE)
+I (..\Libs\icm_20948.h)(0x69080202)
+I (../Middlewares/ST/ARM/DSP/Inc/arm_math.h)(0x69080D84)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB87F2)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5CEB87E6)
+I (C:\Keil_v5\ARM\ARMCC\include\float.h)(0x5CEB87F2)
+I (C:\Keil_v5\ARM\ARMCC\include\limits.h)(0x5CEB87E6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB87F2)
+F (..\Libs\euler_angles.h)(0x6909BFEB)()
+F (../Middlewares/ST/ARM/DSP/Lib/arm_cortexM4lf_math.lib)(0x69080D84)()

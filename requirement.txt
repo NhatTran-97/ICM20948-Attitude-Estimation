@@ -1,0 +1,7 @@
+pip install matplotlib
+pip install pyquaternion
+pip install PyQt6 PyOpenGL pyserial numpy
+pip install pyqt6-tools
+pip install pyqtgraph
+
+

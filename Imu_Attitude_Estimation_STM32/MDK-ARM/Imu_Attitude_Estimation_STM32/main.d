@@ -29,5 +29,15 @@ imu_attitude_estimation_stm32\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f
 imu_attitude_estimation_stm32\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 imu_attitude_estimation_stm32\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
 imu_attitude_estimation_stm32\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
+imu_attitude_estimation_stm32\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
+imu_attitude_estimation_stm32\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
+imu_attitude_estimation_stm32\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 imu_attitude_estimation_stm32\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 imu_attitude_estimation_stm32\main.o: ../Libs/icm_20948.h
+imu_attitude_estimation_stm32\main.o: ../Middlewares/ST/ARM/DSP/Inc/arm_math.h
+imu_attitude_estimation_stm32\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+imu_attitude_estimation_stm32\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+imu_attitude_estimation_stm32\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\float.h
+imu_attitude_estimation_stm32\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+imu_attitude_estimation_stm32\main.o: ../Libs/imu_data.h
+imu_attitude_estimation_stm32\main.o: ../Libs/euler_angles.h

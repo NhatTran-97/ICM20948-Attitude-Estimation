@@ -19,8 +19,12 @@
 "imu_attitude_estimation_stm32\stm32f4xx_hal_exti.o"
 "imu_attitude_estimation_stm32\stm32f4xx_hal_tim.o"
 "imu_attitude_estimation_stm32\stm32f4xx_hal_tim_ex.o"
+"imu_attitude_estimation_stm32\stm32f4xx_hal_uart.o"
 "imu_attitude_estimation_stm32\system_stm32f4xx.o"
 "imu_attitude_estimation_stm32\icm_20948.o"
+"imu_attitude_estimation_stm32\imu_data.o"
+"imu_attitude_estimation_stm32\euler_angles.o"
+"../Middlewares/ST/ARM/DSP/Lib/arm_cortexM4lf_math.lib"
 --strict --scatter "Imu_Attitude_Estimation_STM32\Imu_Attitude_Estimation_STM32.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

@@ -105,9 +105,9 @@ uint8_t icm_20948_read_data(icm_20948_data* data)
 	data ->y_gyro = ((int16_t)data_rx[8]<<8) | (int16_t)data_rx[9];
 	data ->z_gyro = ((int16_t)data_rx[10]<<8)| (int16_t)data_rx[11];
 	
-	data ->x_magnet = ((int16_t)data_rx[15]<<8) | (int16_t) data_rx[14];
-	data ->y_magnet = ((int16_t)data_rx[17]<<8) | (int16_t)data_rx[16];
-	data ->z_magnet = ((int16_t)data_rx[19]<<8)| (int16_t)data_rx[18];
+	data ->x_magnet = ((int16_t)data_rx[15]<<8) | (int16_t) data_rx[14] - MAG_X_BIAS;
+	data ->y_magnet = ((int16_t)data_rx[17]<<8) | (int16_t)data_rx[16] - MAG_Y_BIAS;
+	data ->z_magnet = ((int16_t)data_rx[19]<<8)| (int16_t)data_rx[18] - MAG_Z_BIAS;
 	
 	activate_imu();
 	HAL_SPI_Transmit(&IMU_SPI, &temp_data, 1, 1000);

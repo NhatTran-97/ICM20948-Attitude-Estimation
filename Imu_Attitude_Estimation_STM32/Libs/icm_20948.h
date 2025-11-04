@@ -93,6 +93,17 @@ extern SPI_HandleTypeDef   hspi2;
 // Magnetometer address
 #define AK09916_ADDRESS 0x0c
 
+// Define Magnetometer biases
+#define MAG_X_BIAS   	-104
+#define MAG_Y_BIAS		-106
+#define MAG_Z_BIAS		534
+
+/*
+max_maz = 801 
+min_maz = 269 -> 800+269/2 = 534
+
+*/
+
 typedef enum
 {
 	_gyro_250dps =  0x00,

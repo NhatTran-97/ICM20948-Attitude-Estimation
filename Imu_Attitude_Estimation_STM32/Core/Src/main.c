@@ -24,6 +24,9 @@
 
 #include "stdio.h"
 #include "icm_20948.h"
+#include "arm_math.h"
+#include "imu_data.h"
+#include "euler_angles.h"
 
 /* USER CODE END Includes */
 
@@ -47,8 +50,17 @@ SPI_HandleTypeDef hspi2;
 DMA_HandleTypeDef hdma_spi2_rx;
 DMA_HandleTypeDef hdma_spi2_tx;
 
+TIM_HandleTypeDef htim4;
+
+UART_HandleTypeDef huart2;
+
 /* USER CODE BEGIN PV */
 int sum_gyro_x, sum_gyro_y, sum_gyro_z;
+static uint8_t timer_flag = 0;
+
+int16_t mag_x, mag_y, mag_z;
+imu_norm imu_norm_var;
+euler_angles euler_temp;
 
 /* USER CODE END PV */
 
@@ -57,6 +69,8 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_DMA_Init(void);
 static void MX_SPI2_Init(void);
+static void MX_TIM4_Init(void);
+static void MX_USART2_UART_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -77,9 +91,10 @@ int main(void)
 
   /* USER CODE BEGIN 1 */
 	
-	uint8_t address, data;
-	uint32_t test = 0;
+//	uint8_t address, data;
+//	uint32_t test = 0;
 	icm_20948_data icm_data;
+	int16_t counter_time;
 
 	
 
@@ -105,26 +120,28 @@ int main(void)
   MX_GPIO_Init();
   MX_DMA_Init();
   MX_SPI2_Init();
+  MX_TIM4_Init();
+  MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
 	
 	HAL_Delay(100);
 
-  // SEND SPI
-  HAL_GPIO_WritePin(SPI2_CS_GPIO_Port, SPI2_CS_Pin, GPIO_PIN_RESET);
-  address = 0x7f;
-  data = 0x03 << 4;  // Bank3, SET bit 4 and 5
-  HAL_SPI_Transmit(&hspi2, &address, 1, 100);
-  HAL_SPI_Transmit(&hspi2, &data, 1, 100);
-  HAL_GPIO_WritePin(SPI2_CS_GPIO_Port, SPI2_CS_Pin, GPIO_PIN_SET);
+//  // SEND SPI
+//  HAL_GPIO_WritePin(SPI2_CS_GPIO_Port, SPI2_CS_Pin, GPIO_PIN_RESET);
+//  address = 0x7f;
+//  data = 0x03 << 4;  // Bank3, SET bit 4 and 5
+//  HAL_SPI_Transmit(&hspi2, &address, 1, 100);
+//  HAL_SPI_Transmit(&hspi2, &data, 1, 100);
+//  HAL_GPIO_WritePin(SPI2_CS_GPIO_Port, SPI2_CS_Pin, GPIO_PIN_SET);
 
 
 
- // SEND - READ SPI
-  HAL_GPIO_WritePin(SPI2_CS_GPIO_Port, SPI2_CS_Pin, GPIO_PIN_RESET); // CS = 0 -> Slave (ICM20948) listen from master
-  address = 0x80 | 0x00;
-  HAL_SPI_Transmit(&hspi2, &address, 1, 100);
-  HAL_SPI_Receive(&hspi2, &data,1, 100);
-  HAL_GPIO_WritePin(SPI2_CS_GPIO_Port, SPI2_CS_Pin, GPIO_PIN_SET);
+// // SEND - READ SPI
+//  HAL_GPIO_WritePin(SPI2_CS_GPIO_Port, SPI2_CS_Pin, GPIO_PIN_RESET); // CS = 0 -> Slave (ICM20948) listen from master
+//  address = 0x80 | 0x00;
+//  HAL_SPI_Transmit(&hspi2, &address, 1, 100);
+//  HAL_SPI_Receive(&hspi2, &data,1, 100);
+//  HAL_GPIO_WritePin(SPI2_CS_GPIO_Port, SPI2_CS_Pin, GPIO_PIN_SET);
 
 
   icm_20948_init();
@@ -139,21 +156,40 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 		
-		test+=1;
-	  HAL_Delay(1000);
+		if (timer_flag == 1)
+		{
+			timer_flag = 0;
+			
+			icm_20948_read_data(&icm_data);
+			sum_gyro_x += icm_data.x_gyro;
+			sum_gyro_y += icm_data.y_gyro;
+			sum_gyro_z += icm_data.z_gyro;
+			
 
-	  if(test == 1000)
-	  {
-		  test = 0;
-	  }
-	  icm_20948_read_data(&icm_data);
-		sum_gyro_x += icm_data.x_gyro;
-		sum_gyro_y += icm_data.y_gyro;
-		sum_gyro_z += icm_data.z_gyro;
+			kq = sum_gyro_x;//icm_data.y_magnet;
+			kq2 = icm_data.x_accel;
+			sensor2imu(icm_data, &imu_norm_var);
+			complementary_filter_euler(imu_norm_var, &euler_temp);
+			counter_time++;
+			
+			// 1000/30 = 33
+			if(counter_time == 30)
+			{
+				counter_time = 0;
+				HAL_UART_Transmit(&huart2, (uint8_t *)&euler_temp, 12, 100);
+			}
+//			test+=1;
+//			HAL_Delay(1000);
+
+//			if(test == 1000)
+//			{
+//				test = 0;
+//			}
+			
+		}
 		
 
-	 kq = icm_data.y_magnet;
-		kq2 = icm_data.x_accel;
+
   }
   /* USER CODE END 3 */
 }
@@ -238,6 +274,86 @@ static void MX_SPI2_Init(void)
 }
 
 /**
+  * @brief TIM4 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM4_Init(void)
+{
+
+  /* USER CODE BEGIN TIM4_Init 0 */
+
+  /* USER CODE END TIM4_Init 0 */
+
+  TIM_ClockConfigTypeDef sClockSourceConfig = {0};
+  TIM_MasterConfigTypeDef sMasterConfig = {0};
+
+  /* USER CODE BEGIN TIM4_Init 1 */
+
+  /* USER CODE END TIM4_Init 1 */
+  htim4.Instance = TIM4;
+  htim4.Init.Prescaler = 79;
+  htim4.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim4.Init.Period = 9999;
+  htim4.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  htim4.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_Base_Init(&htim4) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+  if (HAL_TIM_ConfigClockSource(&htim4, &sClockSourceConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+  if (HAL_TIMEx_MasterConfigSynchronization(&htim4, &sMasterConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM4_Init 2 */
+	htim4.Instance->PSC = SystemCoreClock / (1e6) - 1;
+	htim4.Instance->ARR = 1e6 / (SAMPLE_RATE) - 1;
+	HAL_TIM_Base_Start_IT(&htim4);
+  /* USER CODE END TIM4_Init 2 */
+
+}
+
+/**
+  * @brief USART2 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_USART2_UART_Init(void)
+{
+
+  /* USER CODE BEGIN USART2_Init 0 */
+
+  /* USER CODE END USART2_Init 0 */
+
+  /* USER CODE BEGIN USART2_Init 1 */
+
+  /* USER CODE END USART2_Init 1 */
+  huart2.Instance = USART2;
+  huart2.Init.BaudRate = 115200;
+  huart2.Init.WordLength = UART_WORDLENGTH_8B;
+  huart2.Init.StopBits = UART_STOPBITS_1;
+  huart2.Init.Parity = UART_PARITY_NONE;
+  huart2.Init.Mode = UART_MODE_TX_RX;
+  huart2.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+  huart2.Init.OverSampling = UART_OVERSAMPLING_16;
+  if (HAL_UART_Init(&huart2) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN USART2_Init 2 */
+
+  /* USER CODE END USART2_Init 2 */
+
+}
+
+/**
   * Enable DMA controller clock
   */
 static void MX_DMA_Init(void)
@@ -268,6 +384,7 @@ static void MX_GPIO_Init(void)
 /* USER CODE END MX_GPIO_Init_1 */
 
   /* GPIO Ports Clock Enable */
+  __HAL_RCC_GPIOA_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
@@ -285,6 +402,12 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) // 10ms
+{
+	timer_flag = 1;
+	
+}
 
 /* USER CODE END 4 */
 
