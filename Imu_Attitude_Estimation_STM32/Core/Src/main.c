@@ -27,6 +27,8 @@
 #include "arm_math.h"
 #include "imu_data.h"
 #include "euler_angles.h"
+#include "attitude_complementary.h"
+#include "attitude_kalman_extended.h"
 
 /* USER CODE END Includes */
 
@@ -61,6 +63,7 @@ static uint8_t timer_flag = 0;
 int16_t mag_x, mag_y, mag_z;
 imu_norm imu_norm_var;
 euler_angles euler_temp;
+quaternion quat_temp;
 
 /* USER CODE END PV */
 
@@ -125,6 +128,8 @@ int main(void)
   /* USER CODE BEGIN 2 */
 	
 	HAL_Delay(100);
+	icm_20948_init();
+	attitude_init_extended();
 
 //  // SEND SPI
 //  HAL_GPIO_WritePin(SPI2_CS_GPIO_Port, SPI2_CS_Pin, GPIO_PIN_RESET);
@@ -144,7 +149,7 @@ int main(void)
 //  HAL_GPIO_WritePin(SPI2_CS_GPIO_Port, SPI2_CS_Pin, GPIO_PIN_SET);
 
 
-  icm_20948_init();
+  
 
   /* USER CODE END 2 */
 
@@ -169,14 +174,17 @@ int main(void)
 			kq = sum_gyro_x;//icm_data.y_magnet;
 			kq2 = icm_data.x_accel;
 			sensor2imu(icm_data, &imu_norm_var);
-			complementary_filter_euler(imu_norm_var, &euler_temp);
+		//	run_quaternion_complementary(imu_norm_var, &quat_temp);
+		//	complementary_filter_euler(imu_norm_var, &euler_temp);
+			run_kalman_extended(imu_norm_var, &quat_temp);
 			counter_time++;
 			
 			// 1000/30 = 33
 			if(counter_time == 30)
 			{
 				counter_time = 0;
-				HAL_UART_Transmit(&huart2, (uint8_t *)&euler_temp, 12, 100);
+			//	HAL_UART_Transmit(&huart2, (uint8_t *)&euler_temp, 12, 100);
+				HAL_UART_Transmit(&huart2, (uint8_t *)&quat_temp, 16, 100);
 			}
 //			test+=1;
 //			HAL_Delay(1000);

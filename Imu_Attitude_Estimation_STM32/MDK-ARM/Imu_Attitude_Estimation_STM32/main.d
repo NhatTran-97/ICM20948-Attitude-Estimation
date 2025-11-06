@@ -41,3 +41,7 @@ imu_attitude_estimation_stm32\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\float.
 imu_attitude_estimation_stm32\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
 imu_attitude_estimation_stm32\main.o: ../Libs/imu_data.h
 imu_attitude_estimation_stm32\main.o: ../Libs/euler_angles.h
+imu_attitude_estimation_stm32\main.o: ../Libs/attitude_complementary.h
+imu_attitude_estimation_stm32\main.o: ../Libs/imu2quaternion.h
+imu_attitude_estimation_stm32\main.o: ../Libs/quaternion.h
+imu_attitude_estimation_stm32\main.o: ../Libs/attitude_kalman_extended.h

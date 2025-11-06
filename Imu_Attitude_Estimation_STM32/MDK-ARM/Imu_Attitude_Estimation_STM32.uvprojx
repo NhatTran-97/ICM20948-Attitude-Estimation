@@ -593,6 +593,56 @@
               <FileType>5</FileType>
               <FilePath>..\Libs\euler_angles.h</FilePath>
             </File>
+            <File>
+              <FileName>quaternion.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Libs\quaternion.h</FilePath>
+            </File>
+            <File>
+              <FileName>quaternion.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Libs\quaternion.c</FilePath>
+            </File>
+            <File>
+              <FileName>imu2quaternion.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Libs\imu2quaternion.c</FilePath>
+            </File>
+            <File>
+              <FileName>imu2quaternion.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Libs\imu2quaternion.h</FilePath>
+            </File>
+            <File>
+              <FileName>attitude_complementary.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Libs\attitude_complementary.c</FilePath>
+            </File>
+            <File>
+              <FileName>attitude_complementary.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Libs\attitude_complementary.h</FilePath>
+            </File>
+            <File>
+              <FileName>quaternion2imu.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Libs\quaternion2imu.h</FilePath>
+            </File>
+            <File>
+              <FileName>quaternion2imu.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Libs\quaternion2imu.c</FilePath>
+            </File>
+            <File>
+              <FileName>attitude_kalman_extended.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Libs\attitude_kalman_extended.c</FilePath>
+            </File>
+            <File>
+              <FileName>attitude_kalman_extended.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Libs\attitude_kalman_extended.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

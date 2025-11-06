@@ -24,6 +24,11 @@
 "imu_attitude_estimation_stm32\icm_20948.o"
 "imu_attitude_estimation_stm32\imu_data.o"
 "imu_attitude_estimation_stm32\euler_angles.o"
+"imu_attitude_estimation_stm32\quaternion.o"
+"imu_attitude_estimation_stm32\imu2quaternion.o"
+"imu_attitude_estimation_stm32\attitude_complementary.o"
+"imu_attitude_estimation_stm32\quaternion2imu.o"
+"imu_attitude_estimation_stm32\attitude_kalman_extended.o"
 "../Middlewares/ST/ARM/DSP/Lib/arm_cortexM4lf_math.lib"
 --strict --scatter "Imu_Attitude_Estimation_STM32\Imu_Attitude_Estimation_STM32.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
